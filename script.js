@@ -20,15 +20,3 @@ function calcular() {
         document.getElementById('resultado').innerHTML = "Sem valores"
     }
 }
-
-
-var resultado = document.getElementById('resultado');
-function keyPressed(evt){
-    evt = evt || window.event;
-    var key = evt.keyCode || evt.which;
-    return String.fromCharCode(key); 
-}
-document.onkeypress = function(evt) {
-    var str = keyPressed(evt);
-    resultado.innerHTML += str;
-};
